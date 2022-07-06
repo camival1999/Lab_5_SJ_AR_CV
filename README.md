@@ -75,11 +75,9 @@ https://youtu.be/YKBcChMwJiY
 [![inicialesConBoton](https://img.youtube.com/vi/YKBcChMwJiY/mqdefault.jpg)](https://youtu.be/YKBcChMwJiY) 
 
 
-Y cargamos estos módulos en el controlador del robot para verlo en acción: (CAMBIAR!!!!!!!)
-https://youtu.be/txJBNLaKgSk
-(Click en la imagen para acceder directamente)
+Y cargamos estos módulos en el controlador del robot para verlo en acción: 
+(Falta que Sara suba el video del Lab)
 
-[![iniciales](https://img.youtube.com/vi/txJBNLaKgSk/mqdefault.jpg)](https://youtu.be/txJBNLaKgSk) 
 
 ***
 # Aplicación Pick and Place con selectores
