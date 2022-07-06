@@ -27,9 +27,11 @@ El trabajo a realizar es bien sencillo dado que ya poseemos la base del Laborato
 
 El primer paso es la creación de las entradas digitales necesarias en el controlador del robot.
 Dentro de Robot Studio es bastante sencillo desde la pestaña de `Controlador`, `Configuración`,`I/O system` y click derecho sobre `Signal` para obtener el menú de `New signal`:
+
 ![Robot studio](https://user-images.githubusercontent.com/55710287/177644681-551582dc-3816-4bd3-831a-6d2d07371ed0.png)
 
 Una vez aquí, basta con introducir los parámetros de la señal, confirmar y reiniciar el controlador para que las señales entren en efecto.
+
 ![studio 2](https://user-images.githubusercontent.com/55710287/177645066-ce12fb4b-82e9-45f7-a853-6017f8a0c42e.png)
 
 En el caso del robot real ya se encontraban creadas, pero en caso de ser necesario los pasos a seguir en el FlexPendant son los siguientes:
@@ -41,10 +43,12 @@ En el caso del robot real ya se encontraban creadas, pero en caso de ser necesar
 ![Inputs](https://user-images.githubusercontent.com/55710287/177643853-50167fcf-8afd-4003-a1a7-288525975119.png)
 ![Añadir](https://user-images.githubusercontent.com/55710287/177643865-8b880858-bbea-4498-b59f-c63ee2f5e888.png)
 
-Una vez creada la señal, podremos verla junto a todas las demás hacia el final de la sección "Signal" y nuevamente es necesario realizar un reinicio o "Warmstart" para que los cambios entren en efecto
+Una vez creada la señal, podremos verla junto a todas las demás hacia el final de la sección "Signal" y nuevamente es necesario realizar un reinicio o "Warmstart" para que los cambios entren en efecto.
+
 ![Final](https://user-images.githubusercontent.com/55710287/177643872-38b7ace2-a124-43ad-a5de-03ed66f2fc99.png)
 
 Con las señales necesarias creadas en el controlador, basta con crear unos botones en la pestaña `Simulación`, `Lógica de estación` y conectarlos a las entradas correspondientes, listas para ser interpretadas por el robot.
+
 ![Estacion](https://user-images.githubusercontent.com/55710287/177656022-291d7873-1e68-4e8b-b604-c9e463832f07.png)
 ![Botones](https://user-images.githubusercontent.com/55710287/177656025-39ea9a41-93dc-4363-82c4-da225bf68605.png)
 
@@ -76,6 +80,7 @@ https://youtu.be/txJBNLaKgSk
 (Click en la imagen para acceder directamente)
 
 [![iniciales](https://img.youtube.com/vi/txJBNLaKgSk/mqdefault.jpg)](https://youtu.be/txJBNLaKgSk) 
+
 ***
 # Aplicación Pick and Place con selectores
 
@@ -84,9 +89,11 @@ En esta parte del laboratorio se trabajó netamente con Robot Studio y la simula
 
 Se parte nuevamente con la creación de las señales necesarias siguiendo el método descrito en el punto anterior dentro de Robot Studio. Una vez creadas es el momento de crear la herramienta: Un arreglo de ventosas de 100mm x 100mm que permita agarrar las cajas en múltiples orientaciones. Esto se define dentro de Robot studio como un componente inteligente, es decir, un componente que posee cierta lógica/física que lo gobierna y le permite interactuar con el entorno. 
 Así la ventosa diseñada es la siguiente:
+
 ![Ventosa](https://user-images.githubusercontent.com/55710287/177655070-30a8d15e-4f41-40c2-9f04-60b23c6b3be8.png)
 
 Vemos que consta de una parte del modelo en sí (Ventosa 100x100), unido a una serie de elementos inteligentes. 
+
 ![arbol](https://user-images.githubusercontent.com/55710287/177655075-4b4a2046-18fc-4045-968e-65bc838cfdd5.png)
 
 El primero en importancia es el `LineSensor`. Este elemento permite detectar no solo si hay algo delante de la ventosa, sino exactamente qué elemento es el que se encuentra ahí. El siguiente es el `Attacher`, el cual es capaz de unir como un cuerpo rígido a la ventosa con cualquier elemento que se seleccione, en este caso une el elemento que esté delante de la ventosa mediante la información proporcionada por el `LineSensor` emulando la succión de la ventosa. Finalmente tenenemos el `Detacher` que sencillamente separa el cuerpo rígido creado para liberar la pieza.
@@ -99,6 +106,7 @@ Ya con la herramienta lista, pasasamos al generar el módulo de RAPID, el cual d
 
 ### Código RAPID
 Como siempre partimos de la creación de los Targets deseados, tomando en cuenta que las cajas se encuentran en posiciones distintas y se desean agarrar en orientaciones diferentes:
+
 ![Targets](https://user-images.githubusercontent.com/55710287/177656469-3a669720-c699-4e64-934c-a31c4f9ccf56.png)
 
 Una vez definidos pasamos a generar las trayectorias, realizando movimientos en el espacio articular siempre que sea posible para reducir cantidad de código. Cabe resaltar que dentro de estas funciones es donde se realiza el manejo de la salida o ventosa, controlada mediante la salida DO_01 la cual se combina con unos pequeños retrasos con el fin de lograr una correcta adherencia de la pieza en un campo de trabajo real.
