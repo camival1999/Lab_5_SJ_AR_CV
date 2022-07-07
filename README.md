@@ -76,7 +76,7 @@ https://youtu.be/YKBcChMwJiY
 
 
 Y cargamos estos módulos en el controlador del robot para verlo en acción: 
-(Falta que Sara suba el video del Lab)
+https://drive.google.com/file/d/1iqccAdYn6AMIzfpAOIntLIw6Rdi4ltly/view?usp=sharing 
 
 
 ***
@@ -132,3 +132,10 @@ https://youtu.be/YKBcChMwJiY?t=170
 - En conclusión Robot studio es una excelente herramienta de simulación que permite programar robots y sus trayectorias desde una interfaz gráfica, este tipo de herramientas al incorporar un simulador permiten realizar la detección temprana de errores en el código, así como facilitar enormemente la planeación de trayectorias, entradas, salidas y demás.
 - El manejo de I/O es extremandamente importante pues es lo que en últimas define la utilidad de un manipulador: éste solo se encarga de  ubicar y orientar una herramienta, mientras que las entradas y salidas le permiten determinar qué hacer usando la información del entorno y manejar su herramienta entre otras cosas.
 - RAPID posee la facilidad de emplear lógica programada en forma de condicionales, bucles, herramientas matemáticas y más, lo cual a pesar de ser menos conveniente que realizar la programación empleando métodos gráficos como lo es desde la pestaña de `Posición inicial` > `Trayectorias y Puntos`, nos proporciona una enorme flexibilidad para realizar diversas tareas e incluir lógica compleja de manera relativamente intuitiva si ya se conoce algún lenguaje de programación.
+
+Por último queríamos dejarles un pequeño trabajo extra que realizamos.
+
+
+
+https://user-images.githubusercontent.com/82957735/177674998-c9414f0e-0da1-4a59-8df4-eb8bb7c8922f.mp4
+
