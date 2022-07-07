@@ -79,7 +79,7 @@ Y cargamos estos módulos en el controlador del robot para verlo en acción:
 https://youtu.be/0R_kcTW4K4E
 (Click en la imagen para acceder directamente)
 
-[![inicialesConBotonReal](https://img.youtube.com/vi/0R_kcTW4K4E/mqdefault.jpg)](https://youtu.be/0R_kcTW4K4E) 
+[![inicialesConBotonRealReal](https://img.youtube.com/vi/0R_kcTW4K4E/mqdefault.jpg)](https://youtu.be/0R_kcTW4K4E) 
 
 
 ***
